@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3d3cf14f46eb69a942b678f9176eec8",
+    "content-hash": "8c6dda2552871f92257b9d34a6f944a1",
     "packages": [
         {
             "name": "brick/math",
@@ -1132,16 +1132,16 @@
         },
         {
             "name": "larasell-dev/larasell",
-            "version": "v1.18.1",
+            "version": "v1.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Larasell-dev/larasell.git",
-                "reference": "4dbb49d175dc59016b4e3ecc93a42fc3428e9fb5"
+                "reference": "19233c2cee4e2df207e68d9671a401125a7ada05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Larasell-dev/larasell/zipball/4dbb49d175dc59016b4e3ecc93a42fc3428e9fb5",
-                "reference": "4dbb49d175dc59016b4e3ecc93a42fc3428e9fb5",
+                "url": "https://api.github.com/repos/Larasell-dev/larasell/zipball/19233c2cee4e2df207e68d9671a401125a7ada05",
+                "reference": "19233c2cee4e2df207e68d9671a401125a7ada05",
                 "shasum": ""
             },
             "require": {
@@ -1151,15 +1151,11 @@
                 "php": "^8.3"
             },
             "require-dev": {
-                "inertiajs/inertia-laravel": "^3.0",
                 "larastan/larastan": "^3.0",
                 "laravel/pao": "^1.1",
                 "laravel/pint": "^1.0",
                 "orchestra/testbench": "^11.0",
                 "pestphp/pest": "^5.1"
-            },
-            "suggest": {
-                "inertiajs/inertia-laravel": "Required when using the optional Larasell admin panel."
             },
             "type": "library",
             "extra": {
@@ -1200,7 +1196,7 @@
                 "issues": "https://github.com/Larasell-dev/larasell/issues",
                 "source": "https://github.com/Larasell-dev/larasell"
             },
-            "time": "2026-09-27T13:38:26+00:00"
+            "time": "2026-10-13T19:15:52+00:00"
         },
         {
             "name": "laravel/framework",
