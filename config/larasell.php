@@ -49,6 +49,9 @@ return [
         ],
     ],
     'images' => [
+        'disk' => env('LARASELL_IMAGES_DISK', 'public'),
+        'path' => env('LARASELL_IMAGES_PATH', 'larasell/products'),
+        'visibility' => env('LARASELL_IMAGES_VISIBILITY', 'public'),
         'placeholder' => LqipPlaceholderGenerator::class,
     ],
 ];
