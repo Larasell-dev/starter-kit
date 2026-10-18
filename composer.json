@@ -6,7 +6,7 @@
     "keywords": ["laravel", "starter-kit", "larasell", "ecommerce", "shop"],
     "license": "proprietary",
     "require": {
-        "php": "^8.3",
+        "php": "^8.4",
         "inertiajs/inertia-laravel": "^3.0",
         "larasell-dev/larasell": "^1.15",
         "laravel/framework": "^13.0",
