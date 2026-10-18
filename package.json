@@ -5,7 +5,8 @@
     "scripts": {
         "build": "vite build",
         "dev": "vite",
-        "build:ssr": "vite build && vite build --ssr"
+        "build:ssr": "vite build && vite build --ssr",
+        "types": "tsc --noEmit"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.3.3",
