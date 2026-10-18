@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Attributes\Description;
 use Illuminate\Console\Attributes\Signature;
 use Illuminate\Console\Command;
+use Illuminate\Http\File;
 use Illuminate\Support\Facades\Storage;
 use Larasell\Larasell\Models\Product;
 use Larasell\Larasell\Models\ProductImage;
@@ -49,7 +50,7 @@ class SeedProductImages extends Command
                     $product->images()->detach($existing->id);
 
                     if ($existing->products()->doesntExist()) {
-                        $disk->delete($existing->path);
+                        $disk->delete($existing->file);
                         $existing->delete();
                     }
                 }
@@ -58,8 +59,7 @@ class SeedProductImages extends Command
             $count = rand($min, $max);
 
             for ($position = 0; $position < $count; $position++) {
-                $path = $disk->putFile('products', $tempFile);
-                $image = ProductImage::create(['path' => $path]);
+                $image = ProductImage::create(['file' => new File($tempFile)]);
 
                 $product->images()->attach($image->id, ['position' => $position]);
             }
