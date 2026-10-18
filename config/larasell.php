@@ -1,6 +1,6 @@
 <?php
 
-use App\Taxes\GermanyTaxJurisdictionResolver;
+use App\Taxes\StoreTaxJurisdictionResolver;
 use Larasell\Larasell\Enums\TaxPriceMode;
 use Larasell\Larasell\Enums\TaxRoundingMode;
 use Larasell\Larasell\Images\LqipPlaceholderGenerator;
@@ -13,7 +13,8 @@ return [
         'price_mode' => TaxPriceMode::Inclusive->value,
         'rounding' => TaxRoundingMode::HalfUp->value,
         'rounding_level' => 'line',
-        'jurisdiction_resolver' => GermanyTaxJurisdictionResolver::class,
+        'jurisdiction_resolver' => StoreTaxJurisdictionResolver::class,
+        'country' => env('LARASELL_TAX_COUNTRY', 'DE'),
         'rate_resolver' => ConfigTaxRateResolver::class,
         'shipping_category' => 'shipping',
         'rates' => [
