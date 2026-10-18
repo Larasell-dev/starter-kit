@@ -57,7 +57,7 @@ export default function CartShow({ cart }: Props) {
             {cart.items.map((item) => (
               <li className="flex flex-col gap-4 py-6 first:pt-0" key={item.id}>
                 <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] gap-x-3">
-                  <div className="relative row-span-2 aspect-square h-full w-auto overflow-hidden">
+                  <div className="relative row-span-2 size-20 overflow-hidden">
                     {item.image && (
                       <Image
                         alt={item.image.alt ?? item.name}
