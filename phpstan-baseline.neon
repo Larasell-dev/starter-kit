@@ -1,0 +1,49 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Parameter \#1 \$purchasable of method Larasell\\Larasell\\Models\\Cart\:\:add\(\) expects int\|Larasell\\Larasell\\Models\\Product\|Larasell\\Larasell\\Models\\ProductVariant, Illuminate\\Database\\Eloquent\\Collection\<int, Larasell\\Larasell\\Models\\ProductVariant\>\|Larasell\\Larasell\\Models\\ProductVariant given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/AddProductToCartController.php
+
+		-
+			message: '#^Instanceof between App\\Models\\User and Larasell\\Larasell\\Contracts\\StorefrontUser will always evaluate to true\.$#'
+			identifier: instanceof.alwaysTrue
+			count: 1
+			path: app/Http/Controllers/CheckoutController.php
+
+		-
+			message: '#^Cannot call method getAuthIdentifier\(\) on App\\Models\\User\|null\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/LoginController.php
+
+		-
+			message: '#^Cannot call method getAuthIdentifier\(\) on App\\Models\\User\|null\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: app/Http/Controllers/RegisterController.php
+
+		-
+			message: '#^Access to an undefined property Larasell\\Larasell\\Models\\Order\:\:\$created_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Inertia/OrderDetails.php
+
+		-
+			message: '#^Parameter \#1 \$price of static method Larasell\\Larasell\\Price\:\:format\(\) expects Larasell\\Larasell\\Price, Larasell\\Larasell\\Price\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Mail/OrderMailDetails.php
+
+		-
+			message: '#^Parameter \$markdown of class Illuminate\\Mail\\Mailables\\Content constructor expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Mail/OrderMailable.php
+
+		-
+			message: '#^Parameter \#1 \$string of function rtrim expects string, bool\|string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: config/filesystems.php
